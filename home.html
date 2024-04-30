@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Food Website</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <style>
+        .logo img{
+            border: 2px solid lightcoral;
+        }
+        .logo h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+        }
+        
+        .description{
+            font-size: 25px;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="home.html" onclick="home()">Home</a>
+        <a id="product-link" href="product.html">Products</a>
+        <a id="payment-link" href="payment.html">Payment Settings</a>
+        <a id="contact-link" href="contact.html">Contacts</a>
+        <hr>
+        <a id="about-link" href="about.html">About</a>
+        <a href="login.html" onclick="about()">Log-In / Sign-Up</a>
+      
+      </div>
+   
+    
+    <div class="content" id="content">
+        <div class="logo">
+            <img src="logo.png" height="90px"  width= "90px" alt="logo" id="pic1"style="position: relative; top: 0px; left: -10px; border-radius: 50%; ">
+        
+        <h2 style="position: absolute; top: 35px; left: 8%;">Onigashima's Cuisine</h2>
+        <hr>
+    </div>
+    <div class="description">
+        
+<p>
+    Onigashima's cuisine offers a delightful journey into the vibrant flavors of Japanese summer. From light 
+and refreshing dishes to cool and invigorating beverages, every bite and sip is a celebration of the season's bounty.</p>      
+<p>To Know About us more, you can visit About page. To Contact us you can check the contact page.</p>
+</div>
+</div>  
+</p>
+    
+    <script> const productLink = document.getElementById("product-link");
+        const paymentLink = document.getElementById("payment-link");
+        const contactLink = document.getElementById("contact-link");
+        const aboutLink = document.getElementById("about-link");
+        
+        productLink.addEventListener("click", checkLogin);
+        paymentLink.addEventListener("click", checkLogin);
+        contactLink.addEventListener("click", checkLogin);
+        aboutLink.addEventListener("click", checkLogin);
+        
+        function checkLogin(event) {
+          const isLoggedIn = checkIfLoggedIn();
+        
+          if (!isLoggedIn) {
+            
+            alert("Please Log-In First.");
+            open("login.html");
+          }
+        }
+        
+        function checkIfLoggedIn() {
+        }</script>
+</body>
+
+</html
